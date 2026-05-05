@@ -3,6 +3,7 @@ using namespace std;
 
 // Problem: Two Sum
 // Platform: LeetCode
+// Link: https://leetcode.com/problems/two-sum/
 // Pattern: Hashing
 
 class Solution {

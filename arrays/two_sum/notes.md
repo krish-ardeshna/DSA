@@ -1,15 +1,17 @@
 # Two Sum
 
 Platform: LeetCode  
+Problem Link: https://leetcode.com/problems/two-sum/  
+Difficulty: Easy  
 Pattern: Hashing
 
 ## What I understood
 We need to find two numbers whose sum equals the target.  
-Doing it with two loops works, but it’s slow (O(n^2)), so we need something faster.
+A brute force approach using two loops works, but it is inefficient (O(n^2)), so an optimized approach is needed.
 
 ## Idea
-Instead of checking every pair, I can store numbers I’ve already seen.  
-For each number, I check if the "required value" (target - current) is already present.
+Instead of checking every pair, store visited elements in a hashmap.  
+For each element, check if (target - current element) already exists.
 
 ## Approach
 - Traverse the array once
@@ -17,17 +19,20 @@ For each number, I check if the "required value" (target - current) is already p
   - Calculate: diff = target - nums[i]
   - Check if diff exists in map
     - If yes → return indices
-  - Else → store current number with its index
+  - Else → store current number in map
 
 ## Mistake I made
-At first, I went with brute force and didn’t think about optimization.
+At first, I used brute force and didn’t think about optimization.
 
 ## When to use this
-If I see:
-- "find pair with given sum"
-- "two numbers adding to target"
+If the problem involves:
+- finding a pair with a target sum
+- checking complements
 
-→ I should immediately think of hashmap
+→ use a hashmap for O(1) lookup
+
+## Edge Cases
+- No valid pair → return empty vector
 
 ## Complexity
 Time: O(n)  
