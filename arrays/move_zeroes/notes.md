@@ -29,7 +29,7 @@ If the problem involves:
 - moving certain elements (like 0s) to one side
 - keeping relative order intact
 
-→ think **two pointers with in-place swapping**
+→ think "two pointers with in-place swapping"
 
 ## Edge Cases
 - All elements are zero
