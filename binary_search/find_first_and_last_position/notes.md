@@ -12,40 +12,47 @@ We need to find:
 
 of a target element in a sorted array.
 
+A normal binary search can find the target, but here we also need boundary positions.
+
 ## Idea
 
 ### Approach 1 (Brute Force)
-Traverse the array and store every index where target appears.
+Traverse the entire array and store indices where target appears.
 
 Then:
-- first occurrence = first index
-- last occurrence = last index
+- first position = first index
+- last position = last index
 
-This works but takes O(n).
+Simple but inefficient.
 
 ### Approach 2 (Binary Search)
-Since the array is sorted, binary search can be used.
+Since the array is sorted, binary search can be modified:
+- for first occurrence:
+  keep searching on left side
+- for last occurrence:
+  keep searching on right side
 
-For first occurrence:
-- continue searching left even after finding target
-
-For last occurrence:
-- continue searching right even after finding target
+This helps find boundaries efficiently.
 
 ## Approach
 - Run binary search twice:
-  - once for first position
-  - once for last position
+  - once for first occurrence
+  - once for last occurrence
 - Update answer whenever target is found
+- Continue searching instead of stopping immediately
 
-## Mistake I made
-Initially stopped binary search immediately after finding target, which misses boundary positions.
+## Key Observation
+Finding the target is not enough.
+
+The important part is:
+- finding the leftmost occurrence
+- finding the rightmost occurrence
 
 ## When to use this
 If the problem involves:
 - sorted arrays
 - first/last occurrence
-- lower/upper bounds
+- lower bound or upper bound
 
 → think modified binary search
 
@@ -53,6 +60,7 @@ If the problem involves:
 - Target not present
 - Single element array
 - All elements same
+- Target appears once
 
 ## Complexity
 
@@ -63,3 +71,8 @@ Space: O(n)
 ### Binary Search
 Time: O(log n)  
 Space: O(1)
+
+## Related Problems
+- Binary Search
+- Search Insert Position
+- Find Minimum in Rotated Sorted Array
