@@ -17,24 +17,21 @@ Final answer = 2
 ## Idea
 
 ### Approach 1 (Recursion)
-Keep calculating digit sum:
+Keep calculating the sum of digits:
 - Extract digits using modulo
 - Add them
-- Recursively repeat until number becomes single digit
+- Repeat the same process until the number becomes a single digit
 
-### Approach 2 (Math Trick - Digital Root)
-A number's repeated digit sum follows a mathematical pattern called Digital Root.
+### Approach 2 (Digital Root Formula)
+The repeated digit sum follows a mathematical pattern called Digital Root.
 
-This works because digital roots repeat in a cycle of 1 to 9.
+Instead of recalculating again and again, the answer can be directly found using:
 
-Formula:
-- if num == 0 → return 0
-- otherwise:
-  1 + (num - 1) % 9
+1 + (num - 1) % 9
 
 ### Approach 3 (Modulo Observation)
 If a number is divisible by 9,
-its digital root is always 9.
+its final reduced digit is always 9.
 
 Example:  
 18 → 1 + 8 = 9  
@@ -47,20 +44,21 @@ Logic:
 
 ## Approach
 - Recursive:
-  - calculate sum of digits
+  - calculate digit sum
   - call function again
-- Math:
-  - directly return digital root formula
-- Modulo:
+- Math Formula:
+  - directly compute digital root
+- Modulo Observation:
   - use divisibility property of 9
 
-## Mistake I made
-Initially thought recursion was the only way and didn’t know a mathematical shortcut exists.
+## Key Observation
+The answer follows a repeating mathematical cycle instead of requiring repeated computation.
 
 ## When to use this
 If the problem involves:
-- repeated digit sums
-- digit reduction
+- repeated digit reduction
+- digit sums
+- mathematical patterns
 - constant-time optimization
 
 → think digital root property
@@ -68,6 +66,7 @@ If the problem involves:
 ## Edge Cases
 - num = 0
 - single digit numbers
+- numbers divisible by 9
 
 ## Complexity
 
