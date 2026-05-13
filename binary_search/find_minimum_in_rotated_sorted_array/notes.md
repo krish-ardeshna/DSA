@@ -6,44 +6,51 @@ Difficulty: Medium
 Pattern: Binary Search
 
 ## What I understood
-The array was originally sorted but then rotated.
+The array was originally sorted in increasing order, but then rotated at some pivot.
 
-We need to find the minimum element in O(log n) time.
+Even after rotation, one side of the array still remains sorted.  
+That property can be used to eliminate half of the search space.
 
 ## Idea
-In a rotated sorted array:
-- one half is always sorted
-- the minimum lies in the unsorted half
-
-Compare middle element with high pointer:
+Compare the middle element with the last element:
 - if nums[mid] > nums[high]
-  → minimum is in right half
+  → minimum lies in right half
 - otherwise
-  → minimum is in left half (including mid)
+  → minimum lies in left half (including mid)
+
+Instead of checking every element, we keep shrinking the range using binary search.
 
 ## Approach
 - Initialize low and high
 - Run binary search while low < high
+- Find middle element
 - Compare nums[mid] with nums[high]
-- Narrow search space accordingly
-- Return nums[low]
+- Move search space accordingly
+- At the end, low points to minimum element
 
-## Mistake I made
-Initially tried checking every element linearly, which ignores the sorted structure.
+## Key Observation
+Even though the array is rotated, one half always stays sorted.
+
+That makes binary search possible.
 
 ## When to use this
 If the problem involves:
 - rotated sorted arrays
 - finding pivot/minimum
-- sorted structure with rotation
+- searching in partially sorted structures
 
 → think modified binary search
 
 ## Edge Cases
 - Array not rotated
-- Array with one element
-- Minimum at first index
+- Single element array
+- Minimum element at index 0
 
 ## Complexity
 Time: O(log n)  
 Space: O(1)
+
+## Related Problems
+- Search in Rotated Sorted Array
+- Find Peak Element
+- Search Insert Position
