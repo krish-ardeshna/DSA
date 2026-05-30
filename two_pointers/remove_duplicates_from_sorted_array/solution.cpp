@@ -12,7 +12,6 @@ public:
         if (nums.empty()) return 0;
         int k = 1;
         for (int i = 1; i < nums.size(); i++) {
-
             if (nums[i] != nums[i - 1]) {
                 nums[k] = nums[i];
                 k++;
@@ -23,7 +22,6 @@ public:
 };
 
 int main() {
-
     vector<int> nums = {1,1,2,2,3,4,4};
     Solution s;
 
