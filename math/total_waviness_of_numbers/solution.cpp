@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Problem: Total Waviness of Numbers
-// Link: Contest Problem
+// Problem: Total Waviness of Numbers in Range I
+// Link: https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/
 // Difficulty: Medium
 // Pattern: Math / Digit Manipulation
 

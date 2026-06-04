@@ -1,7 +1,7 @@
-# Total Waviness of Numbers
+# Total Waviness of Numbers in Range I
 
 Platform: Contest Problem  
-Problem Link: N/A  
+Problem Link: https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/ 
 Difficulty: Medium  
 Pattern: Math / Digit Manipulation
 
