@@ -3,7 +3,7 @@ using namespace std;
 
 // Problem: Nearest Available Drone
 // Link: https://leetcode.com/problems/nearest-available-drone/
-// Difficulty: (contest problem)
+// Difficulty: Easy(contest problem)
 // Pattern: Array - Linear Scan (Manhattan Distance + Range Check)
 
 // ------------------------------------------------------------
