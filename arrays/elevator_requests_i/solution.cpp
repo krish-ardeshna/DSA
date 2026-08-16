@@ -3,7 +3,7 @@ using namespace std;
 
 // Problem: Elevator Requests I
 // Link: https://leetcode.com/problems/elevator-requests-i/
-// Difficulty: (not verified — contest problem, check LC page)
+// Difficulty: Easy (contest problem)
 // Pattern: Array - Linear Scan (Running Distance Sum)
 
 // ------------------------------------------------------------

@@ -1,7 +1,7 @@
 # Elevator Requests I
 Platform: LeetCode  
 Problem Link: https://leetcode.com/problems/elevator-requests-i/  
-Difficulty: Not verified (contest problem, check LC page directly)  
+Difficulty: Easy (contest problem)
 Pattern: Array - Linear Scan (Running Distance Sum)
 
 ## What I understood
