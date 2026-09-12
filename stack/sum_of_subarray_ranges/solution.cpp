@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 // Problem: Sum of Subarray Ranges
 // Link: https://leetcode.com/problems/sum-of-subarray-ranges/
 // Difficulty: Medium
 // Pattern: Monotonic Stack (Max Sum - Min Sum Contribution)
-// ------------------------------------------------------------
 
 // ------------------------------------------------------------
 // Approach 1: Single-Pass Combined Max-Min via Sentinel Boundary
