@@ -1,9 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 // Problem: Count Shadow Pairs I
 // Link: https://leetcode.com/problems/count-shadow-pairs-i/
 // Difficulty: Not verified (recent problem, check LC page)
 // Pattern: Monotonic Stack + Binary Search
+
 // ------------------------------------------------------------
 // Approach: Maintain Monotonic Vector, Binary Search for Count
 // ------------------------------------------------------------
