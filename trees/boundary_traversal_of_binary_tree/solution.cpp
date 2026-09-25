@@ -2,7 +2,7 @@
 using namespace std;
 
 // Problem: Boundary Traversal of Binary Tree
-// Link: Not confirmed on LeetCode (GFG-style problem, not LC #545 which is N-ary Tree Postorder Traversal)
+// Link: https://leetcode.com/problems/boundary-of-binary-tree/
 // Difficulty: Medium
 // Pattern: Tree - DFS (Left Boundary + Leaves + Right Boundary Combined)
 

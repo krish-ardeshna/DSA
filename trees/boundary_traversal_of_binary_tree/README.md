@@ -1,6 +1,6 @@
 # Boundary Traversal of Binary Tree
 Platform: Not confirmed on LeetCode (GFG-style problem)  
-Problem Link: Not confirmed - this is not LC #545 (that ID belongs to N-ary Tree Postorder Traversal); verify the intended source before relying on this link
+Problem Link: https://leetcode.com/problems/boundary-of-binary-tree/
 Difficulty: Medium  
 Pattern: Tree - DFS (Left Boundary + Leaves + Right Boundary Combined)
 
